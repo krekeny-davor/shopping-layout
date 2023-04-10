@@ -1,0 +1,167 @@
+/* General style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+:root {
+  --primary-color: rgb(85, 85, 226);
+  --secondary-color: rgb(255, 255, 255);
+  --third-color: rgb(220, 220, 220);
+  --fourth-color: rgb(109, 109, 109);
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
+.main-container {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--third-color);
+}
+
+/* Specific styles */
+
+.card-container {
+  max-width: 22rem;
+  border-radius: 1rem;
+  background-color: var(--secondary-color);
+  position: relative;
+}
+
+.image-container {
+  border-radius: 1rem 2rem 3rem 4rem;
+  position: relative;
+}
+
+.aside {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--secondary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  opacity: 0.8;
+}
+
+.photo-by {
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  font-size: 0.7rem;
+}
+
+.gradient {
+  height: 3rem;
+  width: 100%;
+  background: linear-gradient(transparent, white 90%);
+  position: absolute;
+  z-index: 1;
+  margin-top: -3rem;
+}
+
+.image {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card-body-container {
+  padding: 1rem;
+  background-color: var(--secondary-color);
+}
+
+.shoe-heading {
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+.shoe-description {
+  font-size: 0.8rem;
+  color: var(--fourth-color);
+  padding-bottom: 1rem;
+}
+
+.cart-container {
+  background-color: var(--third-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.price-tag {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.size-quantity {
+  display: flex;
+  margin: 1rem 0;
+  gap: 2rem;
+}
+
+.size,
+.quantity {
+  display: flex;
+  gap: 0.75rem;
+  color: var(--fourth-color);
+}
+
+.select {
+  width: 3rem;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.only-screenreader {
+  position: absolute;
+  visibility: hidden;
+}
+
+.color-circle {
+  height: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.color {
+  visibility: hidden;
+  position: absolute;
+}
+
+.color:checked + label > .color-circle {
+  outline: 0.1rem solid grey;
+  outline-offset: 0.1rem;
+}
+
+.blue {
+  background-color: #1f55af;
+}
+
+.red {
+  background-color: #da4841;
+}
+
+.black {
+  background-color: black;
+}
+
+.button {
+  font-weight: 500;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.75rem 0;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
